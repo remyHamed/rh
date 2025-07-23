@@ -1,18 +1,31 @@
-function Header () {
-    return ( 
-        <>
-            <header className="flex justify-between items-center p-4 bg-black">
-                <div className="text-xl font-bold text-white">Rémy Hamed</div>
-                <nav>
-                    <ul className="flex space-x-4 text-white">
-                    <li><a href="#" className="hover:underline">Accueil</a></li>
-                    <li><a href="#" className="hover:underline">Projets</a></li>
-                    <li><a href="#" className="hover:underline">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </>
-    )
+import SlidingLetter from "../SlidingLetter/SlidingLetter"
+
+function Header() {
+    return (
+        <header
+        className="
+            group
+            mt-4
+            w-[10vw]
+            h-[10vw]
+            bg-black
+            transition-all
+            duration-300
+            hover:scale-110
+            origin-top-left
+            flex
+            items-center
+            justify-center
+            gap-[0.2vw]
+            overflow-hidden
+        "
+        >
+            <SlidingLetter letter="M" />
+            <SlidingLetter letter="E" />
+            <SlidingLetter letter="N" />
+            <SlidingLetter letter="U" />
+        </header>
+    );
 }
 
 

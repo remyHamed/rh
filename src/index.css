@@ -1,1 +1,36 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+@keyframes role-change {
+    0% {
+        transform: translateY(0%);
+    }
+
+    20% {
+        transform: translateY(-50%);
+    }
+
+    40% {
+        transform: translateY(-100%);
+    }
+
+    60% {
+        transform: translateY(-200%);
+    }
+
+    80% {
+        transform: translateY(-300%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.sliding-letter:hover .slide {
+    animation: role-change 4s ease-in-out forwards;
+}

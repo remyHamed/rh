@@ -7,7 +7,6 @@ const SlidingLetter = ({ letter }: { letter: string }) => {
                 <span className="block text-white text-[2vw] font-bold font-mono">{letter}</span>
                 <span className="block text-white text-[2vw] font-bold font-mono">{letter}</span>
                 <span className="block text-white text-[2vw] font-bold font-mono">{letter}</span>
-
             </div>
         </div>
     );

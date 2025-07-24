@@ -14,7 +14,6 @@ function Header() {
         <header 
             onClick={handleClick}
             className={`
-                group
                 mt-4
                 bg-black
                 transition-all
@@ -44,10 +43,22 @@ function Header() {
         </div>
             {isFullscreen && (
                 <nav className="absolute flex items-center justify-center gap-4 p-2">
-                <a href="/" className="text-white">Accueil</a>
-                <a href="/diplomes" className="text-white">Diplômes</a>
-                <a href="/experience" className="text-white">Expérience</a>
-                <a href="/projets" className="text-white">Projets</a>
+                    <a href="/" className="group text-white">
+                        Accueil
+                        <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+                    </a>
+                    <a href="/diplomes" className="group text-white">
+                        Diplômes
+                        <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+                    </a>
+                    <a href="/experience" className="group text-white">
+                        Expérience
+                        <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+                    </a>
+                    <a href="/projets" className="group text-white">
+                        Projets
+                        <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+                    </a>
                 </nav>
             )}
         </header>

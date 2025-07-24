@@ -11,16 +11,16 @@ module.exports = {
           "100%": { transform: "translateY(0%)", opacity: "1" },
         },
       },
-      animation : {
-        "slide-vertical": "slide-vertical 1s ease-in-out forwards",
-      }
-    },
       animation: {
         "slide-vertical": "slide-vertical 1s ease-in-out forwards",
       },
     },
-    variants: {
-      extend: {},
+    animation: {
+      "slide-vertical": "slide-vertical 1s ease-in-out forwards",
     },
-    plugins: [],
-  }
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+};

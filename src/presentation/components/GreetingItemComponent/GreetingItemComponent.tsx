@@ -30,16 +30,27 @@ export const GreetingItemComponent: React.FC = () => {
   }, []);
 
   return (
-    <div className="item-1-greating">
-      <div className="text-greeting-container" ref={greetingRef}>
-        <span className="greeting">BONJOUR !</span>
-        <div className="white-text">
-          Je suis
-          <span className="yellow-text"> Remy Hamed</span>
+    <div className="flex mt-[3vw] ">
+      <div className="ml-[2vw] mt-[5vw] w-32 flex-1" ref={greetingRef}>
+        <span className="text-[3vw] font-bold font-mono">BONJOUR !</span>
+        <div className="text-black text-[3vw] font-bold font-mono">
+          Je suis 
+          <span className="ml-[1vw] text-yellow bg-sky-600">Remy Hamed</span>
           , développeur full-stack.
         </div>
       </div>
-      <div className="illustration_coding" ref={illustrationRef}></div>
+      <div className="
+        w-32 
+        flex-1
+        bg-[url(/assets/ai-generated-8237711_1280.webp)] 
+        h-[50vw]
+        rounded-md
+        bg-no-repeat
+        mr-[2vw]
+        "
+        ref={illustrationRef}>
+
+      </div>
     </div>
   );
 };

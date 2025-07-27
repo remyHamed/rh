@@ -14,7 +14,6 @@ function Header() {
         <header 
             onClick={handleClick}
             className={`
-                mt-4
                 bg-black
                 transition-all
                 duration-500
@@ -24,16 +23,19 @@ function Header() {
                 justify-center
                 gap-[0.2vw]
                 overflow-hidden
-                ${isFullscreen ? "fixed top-0 left-0 w-screen h-screen z-50" : "w-[10vw] h-[10vw]"}
+                ${isFullscreen ? "fixed top-0 left-0 w-screen h-screen z-50 mt-0" : " absolute w-[12vw] h-[12vw] mt-4"}
                 `}
         >
         <div 
             className="
                 absolute 
                 mt-[4vw] 
-                ml-[1vw] 
+                ml-[2vw] 
                 top-0 
-                left-0 flex gap-[0.2vw]
+                left-0 
+                flex 
+                gap-[0.2vw]
+                group
             "
         >
             <SlidingLetter letter="M" />

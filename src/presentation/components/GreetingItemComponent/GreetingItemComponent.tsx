@@ -30,8 +30,8 @@ export const GreetingItemComponent: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex mt-[3vw] ">
-      <div className="ml-[2vw] mt-[5vw] w-32 flex-1" ref={greetingRef}>
+    <div className="flex mt-0">
+      <div className="ml-[2vw] mt-[15vw] w-32 flex-1" ref={greetingRef}>
         <span className="text-[3vw] font-bold font-mono">BONJOUR !</span>
         <div className="text-black text-[3vw] font-bold font-mono">
           Je suis 
@@ -46,10 +46,8 @@ export const GreetingItemComponent: React.FC = () => {
         h-[50vw]
         rounded-md
         bg-no-repeat
-        mr-[2vw]
         "
         ref={illustrationRef}>
-
       </div>
     </div>
   );

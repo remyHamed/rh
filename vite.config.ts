@@ -8,6 +8,10 @@ export default defineConfig({
   base: "/rh/",
   build: {
     outDir: "dist",
-    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: "./src/main.tsx",
+      },
+    },
   },
 });

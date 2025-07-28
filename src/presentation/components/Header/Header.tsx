@@ -14,6 +14,8 @@ function Header() {
         <header 
             onClick={handleClick}
             className={`
+                hover:scale-110
+                
                 bg-black
                 transition-all
                 duration-500

@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import CvButton from "../CvButton/CvButton";
 
 export const GreetingItemComponent: React.FC = () => {
   const greetingRef = useRef<HTMLDivElement>(null);
   const illustrationRef = useRef<HTMLDivElement>(null);
+ 
 
   useEffect(() => {
 
@@ -30,22 +32,28 @@ export const GreetingItemComponent: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex mt-0 h-[120vw]">
-      <div className="ml-[2vw] mt-[15vw] w-32 flex-1 h-[100vw]" ref={greetingRef}>
+    <div className="flex mt-0">
+    
+      <div className="ml-[2vw] mt-[15vw] w-32 flex-1" ref={greetingRef}>
+
         <span className="text-[3vw] font-bold font-mono">BONJOUR !</span>
         <div className="text-black text-[3vw] font-bold font-mono">
           Je suis 
           <span className="ml-[1vw] text-yellow bg-sky-600">Remy Hamed</span>
           , développeur full-stack.
         </div>
+        <CvButton></CvButton>
       </div>
       <div className="
         w-32 
         flex-1
         bg-[url(/assets/ai-generated-8237711_1280.webp)] 
-        h-[100vw]
         bg-no-repeat
-        mt-[7vw]
+        h-screen
+        w-full
+        bg-cover
+        bg-center
+        mt-0
         "
         ref={illustrationRef}>
       </div>

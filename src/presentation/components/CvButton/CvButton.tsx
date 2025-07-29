@@ -7,7 +7,7 @@ const CvButton = () => {
                 href={mon_cv}
                 download
             >
-            <button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full>
+            <button className="ml-[10vw] mt-[5vw] bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full">
                 Télécharger mon cv
             </button>
         </a>

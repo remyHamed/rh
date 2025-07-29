@@ -34,7 +34,7 @@ export const GreetingItemComponent: React.FC = () => {
   return (
     <div className="flex mt-0">
     
-      <div className="ml-[2vw] mt-[15vw] w-32 flex-1" ref={greetingRef}>
+      <div className="ml-[5%] mt-[15vw] w-32 flex-1" ref={greetingRef}>
 
         <span className="text-[3vw] font-bold font-mono">BONJOUR !</span>
         <div className="text-black text-[3vw] font-bold font-mono">

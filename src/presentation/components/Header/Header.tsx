@@ -1,13 +1,20 @@
 import { useState } from "react";
 import SlidingLetter from "../SlidingLetter/SlidingLetter"
+import { useNavigate } from "react-router-dom";
 
 function Header() {
 
     const [isFullscreen, setIsFullscreen] = useState(false);
+    const navigate =  useNavigate();
 
     function handleClick() {
         setIsFullscreen(!isFullscreen);
     }
+
+    function redirectoTo(path : string) :void {
+        navigate(path)
+    }
+
 
 
     return (
@@ -47,22 +54,22 @@ function Header() {
         </div>
             {isFullscreen && (
                 <nav className="absolute flex items-center justify-center gap-4 p-2">
-                    <a href="/" className="group text-white">
+                    <p className="group text-white">
                         Accueil
                         <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
-                    </a>
-                    <a href="/diplomes" className="group text-white">
+                    </p>
+                    <p onClick={() => redirectoTo("/diploma")} className="group text-white">
                         Diplômes
                         <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
-                    </a>
-                    <a href="/experience" className="group text-white">
+                    </p>
+                    <p className="group text-white">
                         Expérience
                         <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
-                    </a>
-                    <a href="/projets" className="group text-white">
+                    </p>
+                    <p onClick={() => redirectoTo("/projects")} className="group text-white">
                         Projets
                         <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
-                    </a>
+                    </p>
                 </nav>
             )}
         </header>

@@ -54,7 +54,7 @@ function Header() {
         </div>
             {isFullscreen && (
                 <nav className="absolute flex items-center justify-center gap-4 p-2">
-                    <p className="group text-white">
+                    <p onClick={() => redirectoTo("/")}className="group text-white">
                         Accueil
                         <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
                     </p>

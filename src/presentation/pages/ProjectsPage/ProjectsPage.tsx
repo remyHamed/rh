@@ -53,7 +53,6 @@ export const CreateProjectsPage: React.FC = (): React.ReactNode => {
   return (
     <>
       <Header />
-      
       <div className="fixed right-8 top-1/2 transform -translate-y-1/2 z-50">
         {[0, 1, 2].map((index) => (
           <button
@@ -75,6 +74,46 @@ export const CreateProjectsPage: React.FC = (): React.ReactNode => {
       >
         <section className="h-screen snap-start flex flex-col md:flex-row items-center justify-center bg-gray-100 border-b border-gray-300">
           <div className="md:w-1/2 p-10 flex flex-col justify-center">
+            <h2 className="text-4xl font-bold mb-4">Shoot Them Up</h2>
+            <p className="text-lg text-gray-700 mb-6">
+              J'ai développé ce shoot'em up en Python avec Pygame en un temps record, démontrant ma capacité d'apprentissage rapide. J'ai conçu le gameplay, créé les sprites et implémenté une IA ennemi utilisant l'apprentissage par renforcement (Q-table). Ce projet exigeant a renforcé ma polyvalence technique et ma passion pour les défis complexes.
+            </p>
+            <h3 className="text-xl font-semibold mb-2">Stack utilisée :</h3>
+            <ul className="list-disc ml-5 text-gray-600 mb-6">
+              <li>Python</li>
+              <li>Pygame</li>
+              <li> Q-Learning</li>
+            </ul>
+            <div className="flex gap-6">
+              <a href="https://github.com/remyhamed/shoothemUp" target="_blank" rel="noopener noreferrer"
+                className="px-4 py-2 bg-gray-800 text-white rounded-xl shadow hover:bg-gray-700 transition">
+                Repo GitHub
+              </a>
+            </div>
+          </div>
+          <div className="md:w-1/2 h-full w-full bg-[url('/assets/shoothemup.jpg')] bg-no-repeat bg-cover bg-center" />
+        </section>
+                <section className="h-screen snap-start flex flex-col md:flex-row items-center justify-center bg-gray-100 border-b border-gray-300">
+          <div className="md:w-1/2 p-10 flex flex-col justify-center">
+            <h2 className="text-4xl font-bold mb-4">Game of life</h2>
+            <p className="text-lg text-gray-700 mb-6">
+              J'ai co-développé cette implémentation du Jeu de la Vie en adaptant un code existant que j'avais initialement écrit en Java. Mon rôle a consisté à convertir la logique métier et optimiser les algorithmes, tandis que mon binôme a implémenté l'interface graphique avec Pygame. Une collaboration efficace qui démontre ma capacité à travailler sur du code legacy et à m'adapter à différents paradigmes de programmation.            </p>
+            <h3 className="text-xl font-semibold mb-2">Stack utilisée :</h3>
+            <ul className="list-disc ml-5 text-gray-600 mb-6">
+              <li>Python</li>
+              <li>tkinter</li>
+            </ul>
+            <div className="flex gap-6">
+              <a href=" https://github.com/remyHamed/GameOfLifePy" target="_blank" rel="noopener noreferrer"
+                className="px-4 py-2 bg-gray-800 text-white rounded-xl shadow hover:bg-gray-700 transition">
+                Repo GitHub
+              </a>
+            </div>
+          </div>
+          <div className="md:w-1/2 h-full w-full bg-[url('/assets/gof.webp')] bg-no-repeat bg-cover bg-center" />
+        </section>
+        <section className="h-screen snap-start flex flex-col md:flex-row items-center justify-center bg-gray-100 border-b border-gray-300">
+          <div className="md:w-1/2 p-10 flex flex-col justify-center">
             <h2 className="text-4xl font-bold mb-4">
               Portfolio
             </h2>
@@ -90,7 +129,7 @@ export const CreateProjectsPage: React.FC = (): React.ReactNode => {
             <div className="flex gap-6">
               <a href="https://github.com/remyhamed/rh" target="_blank" rel="noopener noreferrer"
                 className="px-4 py-2 bg-gray-800 text-white rounded-xl shadow hover:bg-gray-700 transition">
-                GitHub
+                Repo GitHub
               </a>
               <a href="https://remyhamed.github.io/rh/" target="_blank" rel="noopener noreferrer"
                 className="px-4 py-2 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-500 transition">
@@ -98,26 +137,9 @@ export const CreateProjectsPage: React.FC = (): React.ReactNode => {
               </a>
             </div>
           </div>
-          <div className="md:w-1/2 h-full w-full bg-[url('/assets/shoothemup.jpg')] bg-no-repeat bg-cover bg-center" />
-        </section>
-        <section className="h-screen snap-start flex flex-col md:flex-row items-center justify-center bg-gray-100 border-b border-gray-300">
-          <div className="md:w-1/2 p-10 flex flex-col justify-center">
-            <h2 className="text-4xl font-bold mb-4">Shoot Them Up</h2>
-            <p className="text-lg text-gray-700 mb-6">
-              Un petit jeu en Python avec Pygame, avec plusieurs niveaux et ennemis IA.
-            </p>
-            <h3 className="text-xl font-semibold mb-2">Stack utilisée :</h3>
-            <ul className="list-disc ml-5 text-gray-600 mb-6">
-              <li>Python</li>
-              <li>Pygame</li>
-            </ul>
-            <a href="https://github.com/remyhamed/shoothemUp" target="_blank" rel="noopener noreferrer"
-              className="px-4 py-2 bg-gray-800 text-white rounded-xl shadow hover:bg-gray-700 transition">
-              GitHub
-            </a>
-          </div>
           <div className="md:w-1/2 h-full w-full bg-[url('/assets/chat_shark.png')] bg-no-repeat bg-cover bg-center" />
         </section>
+
         <section className="h-screen snap-start flex flex-col md:flex-row items-center justify-center bg-gray-100 border-b border-gray-300">
           <div className="md:w-1/2 p-10 flex flex-col justify-center">
             <h2 className="text-4xl font-bold mb-4">App Client Rust</h2>
